@@ -1,0 +1,30 @@
+.footer {
+	background-color: var(--primary);
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary);
+}
+
+
+.footer-container {
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-between;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.footer-li {
+	margin-left: 20px;
+}

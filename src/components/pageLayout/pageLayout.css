@@ -1,0 +1,44 @@
+.page {
+	display: flex;
+	flex-direction: column;
+	padding-top: 80px;
+	font-size: 16px;
+}
+
+.page > h1 {
+	color: #6EA4CA;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 70px;
+	font-weight: 400;
+	margin-bottom: 70px;
+}
+
+.page > img {
+	object-fit: cover;
+	height: 450px;
+}
+
+.paragraphs {
+	padding: 50px 10px;
+}
+
+.paragraph {
+	margin-bottom: 40px;
+}
+
+.page-ul {
+	margin-top: 10px;
+	padding-left: 25px;
+}
+
+.list-header {
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+
+.page-li {
+	margin-bottom: 3px;
+}
+
+
