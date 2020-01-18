@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageLayout from "../components/pageLayout/pageLayout"
-import { osporivanieKadastrovojSistemu } from "./contants"
+import { osporivanieKadastrovojSistemu } from "../contants"
 
 const SporKadastr = () => (
 	<Layout>
