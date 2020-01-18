@@ -71,7 +71,7 @@ const IndexPage = () => (
 			</div>
 				<div className="contact-us-address-container">
 					<div className="map">
-						<img src={map} alt=""/>
+						<img src={map}/>
 					</div>
 					<div className="contact-form">
 						<div>ул. Арбат, 1а, Москва,</div>
