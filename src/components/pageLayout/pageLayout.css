@@ -16,6 +16,10 @@
 }
 
 @media (max-width: 600px) {
+	.page {
+		padding-top: 20px;
+	}
+
 	.page > h1 {
 		font-size: 30px;
 	}
