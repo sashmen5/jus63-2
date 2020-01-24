@@ -1,6 +1,7 @@
 .width {
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: 990px;
+	padding: 0 20px;
 }
 
 .flex {
@@ -27,6 +28,7 @@
 	position: fixed;
 	top: 90px;
 	z-index: -2;
+	object-fit: cover;
 }
 
 .opacity-header {
@@ -39,6 +41,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 .opacity-header-line-1 {
@@ -48,6 +51,20 @@
 
 .opacity-header-line-2 {
 	font-size: 60px;
+}
+
+@media (max-width: 600px) {
+	.wide-img {
+		top: 0;
+	}
+
+	.opacity-header {
+		margin-top: 370px;
+	}
+
+	.opacity-header-line-2 {
+		font-size: 30px;
+	}
 }
 
 .cards {
@@ -87,23 +104,46 @@
 }
 
 .about-us {
-	background-color: var(--secondary);
+	background-color: white;
 	display: flex;
 	flex-direction: column;
-	text-align: center;
 	padding: 50px 0;
 }
 
 .about-us > .width {
 	padding: 0 100px;
 }
+
+.about-us-container {
+	display: flex;
+}
+
+.about-us-img > img {
+	border-radius: 15px;
+}
+
 .about-us-header {
 	font-size: 60px;
-	margin-bottom: 50px;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+.about-us-bold-name {
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 .about-us-text {
-	margin-bottom: 25px;
+	margin-right: 60px;
+}
+
+.about-us-text > div {
+	margin-bottom: 10px;
+}
+
+.about-us-bold {
+	font-weight: bold;
 }
 
 .about-us-link {
@@ -117,6 +157,22 @@
 	background-color: rgba(57, 114, 155, 1);
 	transition: background-color .4s ease 0s;
 }
+
+@media (max-width: 600px) {
+	.about-us {
+		padding: 30px 0;
+	}
+
+	.about-us-header {
+		font-size: 30px;
+		margin-bottom: 0;
+	}
+
+	.about-us > .width {
+		padding: 0 30px;
+	}
+}
+
 
 .contact-us {
 	background-color: var(--primary);
@@ -138,14 +194,15 @@
 }
 
 .map {
-	width: 600px;
+	width: 100%;
+	max-width: 600px;
 	margin-right: 30px;
 }
 
 .contact-form {
 	color: white;
 	margin-bottom: 30px;
-	width: 350px
+	max-width: 350px
 }
 
 .contact-us-form {
@@ -154,10 +211,46 @@
 	margin-top: 40px;
 }
 
+.contact-form-address {
+	margin-bottom: 8px;
+}
+
 *[type=text] {
 	margin-bottom: 10px;
 	padding: 3px;
 	border-radius: 3px;
 	border: none;
 	resize: vertical;
+}
+
+@media (max-width: 600px) {
+	.contact-us {
+		padding: 30px 0;
+	}
+
+	.contact-us-header {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	.contact-us-address-container {
+		flex-direction: column;
+		padding: 0 20px;
+	}
+
+	.contact-form {
+		margin-top: 30px;
+	}
+
+	.about-us-container {
+		flex-direction: column;
+	}
+
+	.about-us-img {
+		margin-top: 20px;
+	}
+
+	.about-us-text {
+		margin-right: 0;
+	}
 }

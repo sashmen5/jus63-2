@@ -1,21 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import "./header.css"
 
 
 const navigation = [
-	{
-		text: "О нас",
-		url: "/",
-	},
-	{
-		text: "Услуги",
-		url: "/",
-	},
-	{
-		text: "Клиенты",
-		url: "/",
-	},
 	{
 		text: "Для юридических лиц",
 		url: "/",
@@ -42,6 +30,9 @@ const navigation = [
 ]
 
 const Header = ({ siteTitle }) => {
+	const [isMenuOpened, setIsOpened] = useState(false)
+
+	const toggleMenu = () => setIsOpened(state => !state)
 
 	const renderNavItem = (item, index) => {
 		const { text, url, children } = item
@@ -52,10 +43,10 @@ const Header = ({ siteTitle }) => {
 					children && (
 						<div className="dropdown">
 							{
-								children.map((child, item) => (
-											<Link className="dropdown-item-link" to={child.url}>
-												<div className="dropdown-item">{child.text}</div>
-											</Link>
+								children.map(child => (
+										<Link className="dropdown-item-link" to={child.url}>
+											<div className="dropdown-item">{child.text}</div>
+										</Link>
 									),
 								)
 							}
@@ -66,15 +57,44 @@ const Header = ({ siteTitle }) => {
 		)
 	}
 
+	const renderMobileNavItem = (item, index) => {
+		const { text, url, children } = item
+		return (
+			<>
+				<li key={index}>
+					<div className="header-li-mobile-group">{text}</div>
+				</li>
+				{
+					children.map(child => (
+						<li key={child.text}>
+							<Link className="header-li-mobile" to={child.url}>{child.text}</Link>
+						</li>
+					))
+				}
+			</>
+
+		)
+	}
+
 	return (
 		<header className="header">
 			<div className="width header-container">
-				<Link className="header-link" to="/">Some header text</Link>
-				<nav>
-					<ul className="header-ul">
-						{navigation.map((item, index) => renderNavItem(item, index))}
+				<div className="desktop">
+					<Link className="header-link" to="/">Тут имя конторы</Link>
+					<nav>
+						<ul className="header-ul">
+							{navigation.map((item, index) => renderNavItem(item, index))}
+						</ul>
+						<a href="javascript:void(0)" className="icon" onClick={toggleMenu}>
+							<i className="fa fa-bars"></i>
+						</a>
+					</nav>
+				</div>
+				{
+					isMenuOpened && <ul className="header-ul-mobile">
+						{navigation.map((item, index) => renderMobileNavItem(item, index))}
 					</ul>
-				</nav>
+				}
 			</div>
 		</header>
 	)

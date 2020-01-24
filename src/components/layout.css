@@ -524,9 +524,6 @@ li > ul {
 blockquote *:last-child {
   margin-bottom: 0;
 }
-li *:last-child {
-  margin-bottom: 0;
-}
 p *:last-child {
   margin-bottom: 0;
 }
@@ -616,8 +613,9 @@ pre tt:after {
 }
 
 :root {
-	--primary: #0D3C60;
-	--secondary: #D1E0EB;
+	--primary: #3b1615;
+	--secondary: #c09669;
+	--third: #a0302d;
 }
 
 body {
@@ -628,6 +626,12 @@ body {
 * {
 	font-family: Arial,Helvetica,sans-serif;
 	/*line-height: 20px;*/
+}
+
+@media screen and (max-width: 600px) {
+	main {
+		margin-top: 0;
+	}
 }
 
 
