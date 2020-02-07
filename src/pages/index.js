@@ -9,7 +9,7 @@ import us from "../images/us.jpg"
 const encode = (data) => {
 	return Object.keys(data)
 		.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-		.join("&");
+		.join("&")
 }
 
 const IndexPage = () => {
@@ -27,7 +27,7 @@ const IndexPage = () => {
 			.then(() => alert("Success!"))
 			.catch(error => alert(error))
 
-		e.preventDefault();
+		e.preventDefault()
 	}
 
 	return (
@@ -125,26 +125,11 @@ const IndexPage = () => {
 						{/*<div className="contact-form-address">info@mysite.ru</div>*/}
 						<div className="contact-form-address">Телефон: +7 927 900 0555</div>
 
-						<form onSubmit={handleSubmit}>
-							<p>
-								<label>
-									Your Name: <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)}/>
-								</label>
-							</p>
-							<p>
-								<label>
-									Your Email: <input type="email" name="email" value={email}
-																		 onChange={(e) => setEmail(e.target.value)}/>
-								</label>
-							</p>
-							<p>
-								<label>
-									Message: <textarea name="message" value={message} onChange={(e) => setMessage(e.target.value)}/>
-								</label>
-							</p>
-							<p>
-								<button type="submit">Send</button>
-							</p>
+						<form onSubmit={handleSubmit} className="contact-us-form">
+							<input type="text" className="form-item"  name="name" value={name} onChange={(e) => setName(e.target.value)} required placeholder="Имя"/>
+							<input type="email" className="form-item" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="Email"/>
+							<textarea name="message" className="form-item" value={message} onChange={(e) => setMessage(e.target.value)} required placeholder="Тема"/>
+							<button type="submit">Отправить</button>
 						</form>
 
 

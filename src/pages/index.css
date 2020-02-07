@@ -221,7 +221,7 @@
 	margin-bottom: 8px;
 }
 
-*[type=text] {
+.form-item {
 	margin-bottom: 10px;
 	padding: 3px;
 	border-radius: 3px;
