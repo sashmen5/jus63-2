@@ -80,7 +80,8 @@ const Header = ({ siteTitle }) => {
 		<header className="header">
 			<div className="width header-container">
 				<div className="desktop">
-					<Link className="header-link" to="/">Тут имя конторы</Link>
+					<Link className="header-link" to='/'>Право.com</Link>
+
 					<nav>
 						<ul className="header-ul">
 							{navigation.map((item, index) => renderNavItem(item, index))}

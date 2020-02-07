@@ -1,10 +1,11 @@
 import React from "react";
 import "./footer.css";
+import { Link } from "gatsby"
 
 const Footer = () => (
 	<footer className="footer">
 		<div className="width footer-container">
-			<div>ТУТ ИМЯ КОНТОРЫ!</div>
+			<Link className="header-li-a" to='/'>Право.com</Link>
 			<nav>
 				<ul className="footer-ul">
 					{/*<li className="footer-li">VK</li>*/}
