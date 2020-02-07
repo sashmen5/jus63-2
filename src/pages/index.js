@@ -15,16 +15,16 @@ const encode = (data) => {
 const IndexPage = () => {
 	const [name, setName] = useState("")
 	const [email, setEmail] = useState("")
-	// const [tema, setTema] = useState("")
+	const [tema, setTema] = useState("")
 	const [message, setMessage] = useState("")
 
 	const handleSubmit = e => {
 		fetch("/", {
 			method: "POST",
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
-			body: encode({ "form-name": "contact", name, email, message }),
+			body: encode({ "form-name": "contact", name, email, message, tema }),
 		})
-			.then(() => alert("Success!"))
+			.then(() => alert("Сообщение отправлено! Спасибо."))
 			.catch(error => alert(error))
 
 		e.preventDefault()
@@ -128,7 +128,8 @@ const IndexPage = () => {
 						<form onSubmit={handleSubmit} className="contact-us-form">
 							<input type="text" className="form-item"  name="name" value={name} onChange={(e) => setName(e.target.value)} required placeholder="Имя"/>
 							<input type="email" className="form-item" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="Email"/>
-							<textarea name="message" className="form-item" value={message} onChange={(e) => setMessage(e.target.value)} required placeholder="Тема"/>
+							<input type="text" className="form-item" name="tema" value={tema} onChange={(e) => setTema(e.target.value)} required placeholder="Тема"/>
+							<textarea name="message" className="form-item" value={message} onChange={(e) => setMessage(e.target.value)} required placeholder="Сообщение"/>
 							<button type="submit">Отправить</button>
 						</form>
 
