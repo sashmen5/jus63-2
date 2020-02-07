@@ -31,6 +31,11 @@
 	object-fit: cover;
 }
 
+.margin-bottom-15 {
+	margin-bottom: 15px;
+
+}
+
 .opacity-header {
 	margin-top: 550px;
 	padding: 20px;
@@ -45,8 +50,9 @@
 }
 
 .opacity-header-line-1 {
-	font-size: 18px;
-	margin-bottom: 5px;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .opacity-header-line-2 {

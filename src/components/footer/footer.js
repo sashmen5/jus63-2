@@ -7,7 +7,7 @@ const Footer = () => (
 			<div>ТУТ ИМЯ КОНТОРЫ!</div>
 			<nav>
 				<ul className="footer-ul">
-					<li className="footer-li">VK</li>
+					{/*<li className="footer-li">VK</li>*/}
 					{/*<li className="footer-li">FACEBOOK</li>*/}
 					{/*<li className="footer-li">INST</li>*/}
 				</ul>

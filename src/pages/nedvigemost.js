@@ -7,7 +7,7 @@ import { julZemlyaNedviga } from "../contants"
 
 const Nedvigemost = () => (
 	<Layout>
-		<SEO title="ЖИЛЬЕ, ЗЕМЛЯ, НЕДВИЖИМОСТЬ, ПРИВАТИЗАЦИЯ"/>
+		<SEO title="Жилье, земля, недвижимость, приватизация"/>
 		<PageLayout page={julZemlyaNedviga}/>
 	</Layout>
 )

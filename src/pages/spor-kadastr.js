@@ -6,7 +6,7 @@ import { osporivanieKadastrovojSistemu } from "../contants"
 
 const SporKadastr = () => (
 	<Layout>
-		<SEO title="Home"/>
+		<SEO title="Оспаривание кадастровой стоимости"/>
 		<PageLayout page={osporivanieKadastrovojSistemu}/>
 	</Layout>
 )

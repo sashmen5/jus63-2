@@ -6,7 +6,7 @@ import { ekspertiza } from "../contants"
 
 const Ekspertiza = () => (
 	<Layout>
-		<SEO title="Home"/>
+		<SEO title="Экспертиза"/>
 		<PageLayout page={ekspertiza}/>
 	</Layout>
 )

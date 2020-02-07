@@ -6,7 +6,7 @@ import { semejnueSporu } from "../contants"
 
 const Sporu = () => (
 	<Layout>
-		<SEO title="ВЗЫСКАНИЕ ЗАДОЛЖЕННОСТИ"/>
+		<SEO title="Семейные споры"/>
 		<PageLayout page={semejnueSporu}/>
 	</Layout>
 )

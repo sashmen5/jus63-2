@@ -1,21 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
 import "./index.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import map from "../images/map.png"
-import molotok from "../images/molotok.jpeg"
+import molotok from "../images/big-image.jpg"
 import us from "../images/us.jpg"
 
 const IndexPage = () => (
 	<Layout>
-		<SEO title="Home"/>
+		<SEO title="Имя конторы"/>
 		<img className='wide-img'
 				 src={molotok}
 				 alt=""/>
 		<div className="opacity-header">
-			<div className="opacity-header-line-1">РАЗРАБАТЫВАЕМ ИННОВАЦИОННЫЕ СТРАТЕГИИ,</div>
-			<div className="opacity-header-line-2">ДОБИВАЕМСЯ РОСТА</div>
+			<div className="opacity-header-line-1 margin-bottom-15">Юридические услуги для всех лиц от</div>
+			<div className="opacity-header-line-1">консультации до разрешения споров</div>
 		</div>
 		{/*<div className="cards">*/}
 		{/*	<div className="card">*/}
@@ -99,15 +98,40 @@ const IndexPage = () => (
 				<div className="contact-form">
 					<div className="contact-form-address">г. Самара, ул. Стара-Загора, 27,</div>
 					<div className="contact-form-address">офис 805</div>
-					<div className="contact-form-address">info@mysite.ru</div>
+					{/*<div className="contact-form-address">info@mysite.ru</div>*/}
 					<div className="contact-form-address">Телефон: +7 927 900 0555</div>
 
 					<form className="contact-us-form">
-						<input type="text" placeholder="Имя"/>
-						<input type="text" placeholder="Email"/>
-						<input type="text" placeholder="Тема"/>
+						<input type="text" required placeholder="Имя"/>
+						<input type="text" required placeholder="Email"/>
+						<input type="text" required placeholder="Тема"/>
 						<textarea type="text" rows={5} placeholder="Сообщение"/>
 						<input type="submit" content="Отправить"/>
+					</form>
+
+					<form
+						name="contact"
+						method="POST"
+						data-netlify="true"
+					>
+						<p>
+							<label>Your Name: <input type="text" name="name" /></label>
+						</p>
+						<p>
+							<label>Your Email: <input type="email" name="email" /></label>
+						</p>
+						<p>
+							<label>Your Role: <select name="role[]" multiple>
+								<option value="leader">Leader</option>
+								<option value="follower">Follower</option>
+							</select></label>
+						</p>
+						<p>
+							<label>Message: <textarea name="message"></textarea></label>
+						</p>
+						<p>
+							<button type="submit">Send</button>
+						</p>
 					</form>
 				</div>
 			</div>
