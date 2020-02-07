@@ -32,7 +32,7 @@ const IndexPage = () => {
 
 	return (
 		<Layout>
-			<SEO title="Имя конторы"/>
+			<SEO title="Право.com"/>
 			<img className='wide-img'
 					 src={molotok}
 					 alt="picture"/>
