@@ -47,7 +47,7 @@ const IndexPage = () => (
 
 		<div className="about-us">
 			<div className="width">
-					<div className="about-us-header">О НАС</div>
+				<div className="about-us-header">О НАС</div>
 				<div className="about-us-container">
 
 					<div className="about-us-text">
@@ -101,30 +101,19 @@ const IndexPage = () => (
 					{/*<div className="contact-form-address">info@mysite.ru</div>*/}
 					<div className="contact-form-address">Телефон: +7 927 900 0555</div>
 
-					<form className="contact-us-form">
-						<input type="text" required placeholder="Имя"/>
-						<input type="text" required placeholder="Email"/>
-						<input type="text" required placeholder="Тема"/>
-						<textarea type="text" rows={5} placeholder="Сообщение"/>
-						<input type="submit" content="Отправить"/>
+					<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+						<input type="text" name="name" />
+						<input type="email" name="email" />
+						<textarea name="message"></textarea>
 					</form>
 
-					<form
-						name="contact"
-						method="POST"
-						data-netlify="true"
-					>
+					<form name="contact" method="post">
+						<input type="hidden" name="form-name" value="contact" />
 						<p>
-							<label>Your Name: <input type="text" name="name" /></label>
+							<label>Your Name: <input type="text" name="name"/></label>
 						</p>
 						<p>
-							<label>Your Email: <input type="email" name="email" /></label>
-						</p>
-						<p>
-							<label>Your Role: <select name="role[]" multiple>
-								<option value="leader">Leader</option>
-								<option value="follower">Follower</option>
-							</select></label>
+							<label>Your Email: <input type="email" name="email"/></label>
 						</p>
 						<p>
 							<label>Message: <textarea name="message"></textarea></label>
@@ -133,6 +122,46 @@ const IndexPage = () => (
 							<button type="submit">Send</button>
 						</p>
 					</form>
+
+					{/*<form name="contact" netlify netlify-honeypot="bot-field" hidden>*/}
+					{/*	<input type="text" required placeholder="Имя"/>*/}
+					{/*	<input type="text" required placeholder="Email"/>*/}
+					{/*	<input type="text" required placeholder="Тема"/>*/}
+					{/*	<textarea name="сообщение"></textarea>*/}
+					{/*</form>*/}
+
+					{/*<form name="order" data-netlify="true" className="contact-us-form">*/}
+					{/*	<input type="text" required placeholder="Имя"/>*/}
+					{/*	<input type="text" required placeholder="Email"/>*/}
+					{/*	<input type="text" required placeholder="Тема"/>*/}
+					{/*	<textarea type="text" name="сообщение" rows={5} placeholder="Сообщение"/>*/}
+					{/*	<input type="submit" content="Отправить"/>*/}
+					{/*</form>*/}
+
+					{/*<form*/}
+					{/*	name="contact"*/}
+					{/*	method="POST"*/}
+					{/*	data-netlify="true"*/}
+					{/*>*/}
+					{/*	<p>*/}
+					{/*		<label>Your Name: <input type="text" name="name"/></label>*/}
+					{/*	</p>*/}
+					{/*	<p>*/}
+					{/*		<label>Your Email: <input type="email" name="email"/></label>*/}
+					{/*	</p>*/}
+					{/*	<p>*/}
+					{/*		<label>Your Role: <select name="role[]" multiple>*/}
+					{/*			<option value="leader">Leader</option>*/}
+					{/*			<option value="follower">Follower</option>*/}
+					{/*		</select></label>*/}
+					{/*	</p>*/}
+					{/*	<p>*/}
+					{/*		<label>Message: <textarea name="message"></textarea></label>*/}
+					{/*	</p>*/}
+					{/*	<p>*/}
+					{/*		<button type="submit">Send</button>*/}
+					{/*	</p>*/}
+					{/*</form>*/}
 				</div>
 			</div>
 
