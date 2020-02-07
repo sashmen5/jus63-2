@@ -102,39 +102,25 @@ const IndexPage = () => (
 					<div className="contact-form-address">Телефон: +7 927 900 0555</div>
 
 					<form name="contact" netlify netlify-honeypot="bot-field" hidden>
-						<input type="text" name="name" />
-						<input type="email" name="email" />
-						<textarea name="message"></textarea>
+						<input type="text" required placeholder="Имя" name="Имя"/>
+						<input type="text" required placeholder="Email" name="Email"/>
+						<input type="text" required placeholder="Тема" name="Тема"/>
+						<textarea name="сообщение"></textarea>
 					</form>
 
-					<form name="contact" method="post">
-						<input type="hidden" name="form-name" value="contact" />
-						<p>
-							<label>Your Name: <input type="text" name="name"/></label>
-						</p>
-						<p>
-							<label>Your Email: <input type="email" name="email"/></label>
-						</p>
-						<p>
-							<label>Message: <textarea name="message"></textarea></label>
-						</p>
-						<p>
-							<button type="submit">Send</button>
-						</p>
+					<form name="contact" method="post" className="contact-us-form">
+						<input type="hidden" name="form-name" value="contact"/>
+						<input type="text" name="Имя" required placeholder="Имя"/>
+						<input type="text" name="Email" required placeholder="Email"/>
+						<input type="text" name="Тема" required placeholder="Тема"/>
+						<textarea type="text" name="сообщение" rows={5} placeholder="Сообщение"/>
+						<button type="submit">Send</button>
 					</form>
 
 					{/*<form name="contact" netlify netlify-honeypot="bot-field" hidden>*/}
-					{/*	<input type="text" required placeholder="Имя"/>*/}
-					{/*	<input type="text" required placeholder="Email"/>*/}
-					{/*	<input type="text" required placeholder="Тема"/>*/}
-					{/*	<textarea name="сообщение"></textarea>*/}
 					{/*</form>*/}
 
 					{/*<form name="order" data-netlify="true" className="contact-us-form">*/}
-					{/*	<input type="text" required placeholder="Имя"/>*/}
-					{/*	<input type="text" required placeholder="Email"/>*/}
-					{/*	<input type="text" required placeholder="Тема"/>*/}
-					{/*	<textarea type="text" name="сообщение" rows={5} placeholder="Сообщение"/>*/}
 					{/*	<input type="submit" content="Отправить"/>*/}
 					{/*</form>*/}
 
