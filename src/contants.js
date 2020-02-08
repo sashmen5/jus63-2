@@ -3,7 +3,7 @@ import predstavitelstvoArbitrazhImg from './images/predstavitelstvoArbitrazh.jpg
 import nalogovueSporiImg from './images/nalogovueSpori.jpeg'
 import osporivanieKadastrovojSistemuImg from './images/osporivanieKadastrovojSistemu.jpg'
 import strahSporiImg from './images/strahSpori.jpg'
-import zashitaPravPotrebitelejImg from './images/zashitaPravPotrebitelej.jpg'
+import zashitaPravPotrebitelejImg from './images/korzina.jpg'
 import vzuskanieZadoljenostiImg from './images/vzuskanieZadoljenosti.jpg'
 import julZemlyaNedvigaImg from './images/julZemlyaNedviga.jpg'
 import semejnueSporiuImg from './images/semejnueSporiu.jpg'
