@@ -38,8 +38,7 @@
 
 .opacity-header {
 	margin-top: 550px;
-	padding: 20px;
-	height: 140px;
+	padding: 40px 20px;
 	color: var(--primary);
 	background-color: rgba(255,255,255,.5);
 	display: flex;
@@ -65,11 +64,23 @@
 	}
 
 	.opacity-header {
-		margin-top: 370px;
+		margin-top: 312px;
 	}
 
 	.opacity-header-line-2 {
 		font-size: 30px;
+	}
+}
+
+@media (max-width: 500px) {
+	.opacity-header {
+		margin-top: 265px;
+	}
+}
+
+@media (max-width: 400px) {
+	.opacity-header {
+		margin-top: 232px;
 	}
 }
 

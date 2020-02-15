@@ -80,7 +80,7 @@ const Header = ({ siteTitle }) => {
 		<header className="header">
 			<div className="width header-container">
 				<div className="desktop">
-					<Link className="header-link" to='/'>Право.com</Link>
+					<Link className="header-link" to='/'>Погосян & Плеханова</Link>
 
 					<nav>
 						<ul className="header-ul">

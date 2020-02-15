@@ -32,13 +32,13 @@ const IndexPage = () => {
 
 	return (
 		<Layout>
-			<SEO title="Право.com"/>
+			<SEO title="Погосян & Плеханова"/>
 			<img className='wide-img'
 					 src={molotok}
 					 alt="picture"/>
 			<div className="opacity-header">
-				<div className="opacity-header-line-1 margin-bottom-15">Юридические услуги для всех лиц от</div>
-				<div className="opacity-header-line-1">консультации до разрешения споров</div>
+				<div className="opacity-header-line-1 margin-bottom-15">Различный спектр юридических услуг для граждан и юридических лиц</div>
+				<div className="opacity-header-line-1">от консультации до разрешения споров по существу</div>
 			</div>
 			{/*<div className="cards">*/}
 			{/*	<div className="card">*/}

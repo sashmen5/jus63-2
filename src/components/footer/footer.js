@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 const Footer = () => (
 	<footer className="footer">
 		<div className="width footer-container">
-			<Link className="header-li-a" to='/'>Право.com</Link>
+			<Link className="header-li-a" to='/'>Погосян & Плеханова</Link>
 			<nav>
 				<ul className="footer-ul">
 					{/*<li className="footer-li">VK</li>*/}
