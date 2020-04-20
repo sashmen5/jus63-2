@@ -67,7 +67,7 @@ const Header = ({ siteTitle }) => {
 		return (
 			<>
 				<li key={index}>
-					<div className="header-li-mobile-group">{text}</div>
+					<Link className="header-li-mobile-group" to={url}>{text}</Link>
 				</li>
 				{
 					children.map(child => (
