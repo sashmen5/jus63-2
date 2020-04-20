@@ -30,7 +30,8 @@ video {
 
 main {
 	display: block;
-	margin-top: 90px;
+  margin-top: 90px;
+  min-height: calc(100vh - 180px);
 }
 audio:not([controls]) {
   display: none;

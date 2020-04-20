@@ -125,8 +125,8 @@ const IndexPage = () => {
 						{/*<div className="contact-form-address">info@mysite.ru</div>*/}
 
 						<div className="contact-form-address">Телефоны: +89171163163,</div>
-						<div className="contact-form-address">+89063444104,</div>
-						<div className="contact-form-address">+89277097411</div>
+						<div className="contact-form-address">+79063444104,</div>
+						<div className="contact-form-address">+79277097411</div>
 
 						<form onSubmit={handleSubmit} className="contact-us-form">
 							<input type="text" className="form-item"  name="name" value={name} onChange={(e) => setName(e.target.value)} required placeholder="Имя"/>

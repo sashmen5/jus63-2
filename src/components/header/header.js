@@ -5,6 +5,11 @@ import "./header.css"
 
 const navigation = [
 	{
+		text: "Статьи",
+		url: "/pressa",
+		children: []
+	},
+	{
 		text: "Для юридических лиц",
 		url: "/",
 		children: [
