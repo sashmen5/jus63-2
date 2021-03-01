@@ -120,12 +120,13 @@ const IndexPage = () => {
 						<img src={map}/>
 					</div>
 					<div className="contact-form">
-						<div className="contact-form-address">г. Самара, ул. Стара-Загора, 27,</div>
-						<div className="contact-form-address">офис 805</div>
+						<div className="contact-form-address">443099, г. Самара, ул. Стара-Загора, 27,</div>
+						<div className="contact-form-address">ул. Алексея Толстого, д. 76</div>
+						<div className="contact-form-address">(вход с угла дома, со стороны улицы Пионерская)</div>
 						{/*<div className="contact-form-address">info@mysite.ru</div>*/}
 
-						<div className="contact-form-address">Телефоны: +89063444104,</div>
-						<div className="contact-form-address">+89171163163пле,</div>
+						<div className="contact-form-address">Телефоны: +79063444104,</div>
+						<div className="contact-form-address">+79171163163,</div>
 
 						<form onSubmit={handleSubmit} className="contact-us-form">
 							<input type="text" className="form-item"  name="name" value={name} onChange={(e) => setName(e.target.value)} required placeholder="Имя"/>
