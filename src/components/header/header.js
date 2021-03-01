@@ -85,7 +85,7 @@ const Header = ({ siteTitle }) => {
 		<header className="header">
 			<div className="width header-container">
 				<div className="desktop">
-					<Link className="header-link" to='/'>Погосян & Плеханова</Link>
+					<Link className="header-link" to='/'>Плеханова и &#9400;</Link>
 
 					<nav>
 						<ul className="header-ul">
